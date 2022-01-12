@@ -122,8 +122,8 @@ legend {
     font-weight: 300;
 }
 
-.infoDiv,
-.infoDiv a {
+.info-div,
+.info-div a {
     text-decoration: none;
     justify-content: space-between;
     align-items: center;
@@ -131,7 +131,7 @@ legend {
 
 }
 
-#progressBar {
+#progress-bar {
     width: 200px;
     height: 5px;
     border-radius: 0;
@@ -147,4 +147,14 @@ legend {
 
 #a-pregunta-info {
     color: #000;
+}
+
+.txt-ending {
+    color: #3F3D56;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#img-ending {
+    margin-top: 35px;
 }
