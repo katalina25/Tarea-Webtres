@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
 
-body {
+body,
+html {
+    margin: 0;
+    padding: 0;
     background-color: #fff;
+}
+
+.container {
     padding: 0 25px 0 25px;
 }
 
@@ -20,7 +26,6 @@ div.group-botones {
     flex-direction: column;
     gap: 10px;
 }
-
 
 img {
     margin: auto;
@@ -62,6 +67,7 @@ div.group-botones {
 
 legend {
     color: #666666;
+    margin: 0;
 }
 
 .form-check {
@@ -85,10 +91,6 @@ legend {
 .form-check-input:checked {
     background-color: #000000;
 
-}
-
-legend {
-    margin: 0;
 }
 
 
@@ -139,8 +141,6 @@ legend {
     padding-right: 0px;
 }
 
-
-
 .progress-bar {
     background-color: #7C7C7C;
 }
@@ -157,4 +157,50 @@ legend {
 
 #img-ending {
     margin-top: 35px;
+}
+
+/* Modal */
+
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+
+.modal-content {
+    padding: 10px 20px 100px 20px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.modal-content p {
+    color: #333333;
+    line-height: 24px;
+    margin: auto 10px;
+}
+
+button.btn-close {
+    width: 5px;
+    height: 5px;
+}
+
+.animate-slide-up {
+    position: relative;
+    animation: animatebottom 0.4s;
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
 }
